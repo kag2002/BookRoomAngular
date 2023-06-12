@@ -1,0 +1,87 @@
+<!-- Thông tin đặt phòng -->
+<section class="reservation" id="reservation">
+  <form action="" method="post">
+    <h3>Đặt phòng</h3>
+    <div class="flex">
+      <div class="box">
+        <p>Họ tên<span>*</span></p>
+        <input
+          type="text"
+          name="name"
+          maxlength="50"
+          required
+          placeholder="enter your name"
+          class="input"
+        />
+      </div>
+      <div class="box">
+        <p>Email <span>*</span></p>
+        <input
+          type="email"
+          name="email"
+          maxlength="50"
+          required
+          placeholder="enter your email"
+          class="input"
+        />
+      </div>
+      <div class="box">
+        <p>Số điện thoại<span>*</span></p>
+        <input
+          type="number"
+          name="number"
+          maxlength="10"
+          min="0"
+          max="9999999999"
+          required
+          placeholder="enter your number"
+          class="input"
+        />
+      </div>
+      <div class="box">
+        <p>Số phòng<span>*</span></p>
+        <select name="rooms" class="input" required>
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </div>
+      <div class="box">
+        <p>Thời gian bắt đầu<span>*</span></p>
+        <input type="date" name="check_in" class="input" required />
+      </div>
+      <div class="box">
+        <p>Thời gian kết thúc<span>*</span></p>
+        <input type="date" name="check_out" class="input" required />
+      </div>
+      <div class="box">
+        <p>Số lượng người lớn<span>*</span></p>
+        <select name="adults" class="input" required>
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </div>
+      <div class="box">
+        <p>Số lượng trẻ em<span>*</span></p>
+        <select name="childs" class="input" required>
+          <option value="0" selected>0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </div>
+    </div>
+    <input type="submit" value="Đặt ngay" name="book" class="btn" />
+  </form>
+</section>
+<!--End Thông tin đặt phòng -->

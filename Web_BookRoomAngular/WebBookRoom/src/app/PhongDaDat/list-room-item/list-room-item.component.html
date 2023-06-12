@@ -1,0 +1,16 @@
+<section class="grid">
+  <h1 class="heading">Lịch đặt phòng</h1>
+  <div class="box-container">
+    <app-room-item
+      *ngFor="let roomEl of rooms; let i = index"
+      [index]="i"
+      [room]="roomEl"
+    >
+    </app-room-item>
+
+    <div class="box" style="text-align: center">
+      <p>no bookings found!</p>
+      <a href="dashboard.php" class="btn">go to home</a>
+    </div>
+  </div>
+</section>

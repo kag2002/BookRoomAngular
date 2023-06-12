@@ -1,0 +1,42 @@
+<!-- bookings section starts  -->
+
+<div class="box">
+  <p>
+    Id lịch đặt: <span>{{ room.id }}</span>
+  </p>
+  <p>
+    Tên : <span>{{ room.name }}</span>
+  </p>
+  <p>
+    Email : <span>{{ room.email }}</span>
+  </p>
+  <p>
+    Số điện thoại : <span>{{ room.phoneNumber }}</span>
+  </p>
+  <p>
+    Thời gian đến : <span>{{ room.start }}</span>
+  </p>
+  <p>
+    Thời gian đi : <span>{{ room.end }}</span>
+  </p>
+  <p>
+    Số phòng : <span>{{ room.roomsNumber }}</span>
+  </p>
+  <p>
+    Số người lớn : <span>{{ room.adultNumber }}</span>
+  </p>
+  <p>
+    Số trẻ em : <span>{{ room.childrenNumber }}</span>
+  </p>
+  <form action="" method="POST">
+    <input type="hidden" name="delete_id" value="" />
+    <input
+      type="submit"
+      value="Xóa lịch đặt"
+      onclick="return confirm('Xóa lịch đặt này?');"
+      name="delete"
+      class="btn"
+    />
+  </form>
+</div>
+<!-- bookings section ends -->
